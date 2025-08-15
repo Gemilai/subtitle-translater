@@ -1041,7 +1041,7 @@ async function handleTranslate(event) {
         const chunkStrategy = document.querySelector('input[name="chunk_strategy"]:checked').value;
         switch (chunkStrategy) {
             case 'auto':
-                const idealLinesPerChunk = 25;
+                const idealLinesPerChunk = 50;
                 chunkCount = Math.ceil(translatableEntries.length / idealLinesPerChunk);
                 logMessage(`Automatic strategy: Calculated ${chunkCount} chunks for ${translatableEntries.length} lines.`, 'info');
                 break;
