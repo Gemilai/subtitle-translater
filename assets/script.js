@@ -258,7 +258,7 @@ let currentModel = 'gemini-2.5-flash';
 let currentTemperature = 0.7;
 let currentRequestDelay = 4000;
 let currentTargetLangForRetry = '';
-const proxyUrl = 'https://middleman.yebekhe.workers.dev';
+const proxyUrl = 'https://middle.youtakefreshfig.workers.dev';
 
 // State for new features
 let findState = {
