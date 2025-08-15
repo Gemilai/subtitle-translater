@@ -256,7 +256,7 @@ let currentOriginalFormat = 'srt';
 let currentApiKey = '';
 let currentModel = 'gemini-2.5-flash';
 let currentTemperature = 0.7;
-let currentRequestDelay = 4000;
+let currentRequestDelay = 00;
 let currentTargetLangForRetry = '';
 const proxyUrl = 'https://middle.youtakefreshfig.workers.dev';
 
@@ -1041,7 +1041,7 @@ async function handleTranslate(event) {
         const chunkStrategy = document.querySelector('input[name="chunk_strategy"]:checked').value;
         switch (chunkStrategy) {
             case 'auto':
-                const idealLinesPerChunk = 50;
+                const idealLinesPerChunk = 25;
                 chunkCount = Math.ceil(translatableEntries.length / idealLinesPerChunk);
                 logMessage(`Automatic strategy: Calculated ${chunkCount} chunks for ${translatableEntries.length} lines.`, 'info');
                 break;
